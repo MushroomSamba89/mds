@@ -11,7 +11,7 @@ import InputText from './Components/InputText';
 import CardExample from './Parts/CardExample';
 import Toolbar from './Parts/Toolbar';
 import TypographyExample from './Parts/TypographyExample';
-
+import Checkbox from './Components/Checkbox';
 import './Style/style.scss';
 
 const DEFAULT_VISIBLE_PARTS = {
@@ -36,6 +36,7 @@ function App() {
         <Toolbar currentState={[visibleParts, setVisibleParts]} />
         <Container>
           <InputText label="prova" />
+          <Checkbox />
         </Container>
         <Container>
           { visibleParts.typography && <TypographyExample /> }
